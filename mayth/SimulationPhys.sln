@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulationPhys1_2", "SimulationPhys1_1\SimulationPhys1_2.csproj", "{D2592A45-5A56-497A-83FC-08C477442B67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulationPhys1_3", "SimulationPhys1_3\SimulationPhys1_3.csproj", "{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulationPhys2_5", "SimulationPhys2_5\SimulationPhys2_5.csproj", "{E312713D-BA84-49FE-B139-A34CEBEB3EC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulationPhys2_5_WPF", "SimulationPhys2_5_WPF\SimulationPhys2_5_WPF.csproj", "{B798EB9E-A08B-42D3-92FC-EB92F1F66874}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Debug|x86.ActiveCfg = Debug|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Debug|x86.Build.0 = Debug|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Release|x86.ActiveCfg = Release|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Release|x86.Build.0 = Release|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Debug|x86.ActiveCfg = Debug|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Debug|x86.Build.0 = Debug|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Release|x86.ActiveCfg = Release|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Release|x86.Build.0 = Release|x86
+		{D2592A45-5A56-497A-83FC-08C477442B67}.Debug|x86.ActiveCfg = Debug|x86
+		{D2592A45-5A56-497A-83FC-08C477442B67}.Debug|x86.Build.0 = Debug|x86
+		{D2592A45-5A56-497A-83FC-08C477442B67}.Release|x86.ActiveCfg = Release|x86
+		{D2592A45-5A56-497A-83FC-08C477442B67}.Release|x86.Build.0 = Release|x86
+		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Debug|x86.ActiveCfg = Debug|x86
+		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Debug|x86.Build.0 = Debug|x86
+		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Release|x86.ActiveCfg = Release|x86
+		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SimulationPhys2_5\SimulationPhys2_5.csproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
