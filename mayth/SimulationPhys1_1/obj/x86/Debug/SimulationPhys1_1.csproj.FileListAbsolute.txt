@@ -1,5 +1,0 @@
-e:\documents\visual studio 2010\Projects\SimulationPhys\SimulationPhys1_1\bin\Debug\SimulationPhys1_1.exe
-e:\documents\visual studio 2010\Projects\SimulationPhys\SimulationPhys1_1\bin\Debug\SimulationPhys1_1.pdb
-e:\documents\visual studio 2010\Projects\SimulationPhys\SimulationPhys1_1\obj\x86\Debug\ResolveAssemblyReference.cache
-e:\documents\visual studio 2010\Projects\SimulationPhys\SimulationPhys1_1\obj\x86\Debug\SimulationPhys1_1.exe
-e:\documents\visual studio 2010\Projects\SimulationPhys\SimulationPhys1_1\obj\x86\Debug\SimulationPhys1_1.pdb
