@@ -1,0 +1,126 @@
+\documentclass{jsarticle}
+
+\usepackage{color}
+\usepackage[dvips]{graphicx}
+\usepackage{listings}
+
+\lstset{
+  basicstyle=\small\tt,
+  keywordstyle=\bf,
+  identifierstyle=,
+  commentstyle=,
+  stringstyle=,
+  emphstyle=,
+  backgroundcolor=\color[gray]{0.8},
+  language=Haskell,
+  frame=trbl,
+  rulecolor=\color{white},
+  numbers=left,
+  numberstyle=,
+  basewidth={0.54em, 0.45em},
+  lineskip=-0.2zw
+}
+
+\title{シミュレーション物理 レポート}
+\author{情報科学類 201111365 坂口和彦}
+\date{2011-12-09}
+
+\begin{document}
+
+\maketitle
+
+\section{練習問題(2)}
+
+この問題では、リスト\ref{list:prog2}のHaskellプログラムを用いた。
+
+\begin{lstlisting}[label=list:prog2, caption=練習問題(2)のプログラム]
+module Main where
+
+import Control.Monad
+import System.Random
+
+points :: Int
+points = 1000
+
+rand :: IO Int
+rand = getStdRandom (randomR (-1000000, 1000000))
+
+main :: IO ()
+main = do
+    r <- replicateM points (liftM2 (,) rand rand)
+    let len = length $ filter (\(x, y) -> (x*x + y*y) < 1000000000000) r
+    let r = fromIntegral (4 * len) / fromIntegral points
+    print $ r
+    print $ (pi - r) / pi
+\end{lstlisting}
+
+結果は表\ref{table:prog2}の通りである。
+
+\begin{table}[htb]
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|}\hline
+点の数                              & 100     & 1000      & 10000    \\\hline
+面積の平均値(10回の平均)            & 3.052   & 3.1428    & 3.14736  \\\hline
+$\frac{\pi - \textrm{平均値}}{\pi}$ & 0.02851 & 0.0003843 & 0.001835 \\\hline
+\end{tabular}
+\end{center}
+
+\label{table:prog2}
+
+\caption{練習問題(2)の結果}
+
+\end{table}
+
+\subsection{考察}
+
+乱数が完全に一様に分布していると仮定すれば、点の数が1000の時よりも10000の方がより円周率に近い値が得られるはずだが、結果は異なったものであった。
+
+このことから、乱数の精度の問題で10000回(10回の平均なので)以上値を取ったとしてもより良い結果が出るわけではないということが分かる。
+
+より良い結果を得たいのであれば、完全に等間隔に点を並べて、かつその間隔を狭めていくのが適切な方法である。
+
+\section{練習問題(3)}
+
+この問題では、リスト\ref{list:prog3}のHaskellプログラムとgnuplotを用いた。
+
+\begin{lstlisting}[label=list:prog3, caption=練習問題(3)のプログラム]
+module Main where
+
+import Control.Monad
+import System.Random
+
+points :: Int
+points = 200
+
+rand :: IO Int
+rand = getStdRandom (randomR (-1000000, 1000000))
+
+getPoint :: IO (Float, Float)
+getPoint = do
+    x <- rand
+    y <- rand
+    if x*x + y*y < 1000000000000
+        then return (fromIntegral x / 1000000, fromIntegral y / 1000000)
+        else getPoint
+
+main :: IO ()
+main = do
+    r <- replicateM points getPoint
+    mapM_ (\(x, y) -> putStrLn $ show x ++ " " ++ show y) r
+\end{lstlisting}
+
+結果は図\ref{fig:prog3}の通りである。
+
+\begin{figure}[htbp]
+
+\begin{center}
+\includegraphics[width=100mm]{data.ps}
+\end{center}
+
+\caption{練習問題(3)の結果}
+\label{fig:prog3}
+
+\end{figure}
+
+\end{document}

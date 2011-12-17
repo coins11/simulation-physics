@@ -1,0 +1,21 @@
+
+LATEX = platex --interaction=nonstopmode --kanji=utf8
+DVIPDFM = dvipdfmx
+
+DVIPSFLAGS = -P pdf
+
+data : 2.hs
+    runhaskell 2.hs > data
+
+data.ps : data data.plot
+    gnuplot data.plot
+
+report.pdf : report.ps
+	ps2pdf report.ps
+
+TEXDEPS = data.ps
+
+LaTeXDocument(report, report)
+
+.DEFAULT : report.pdf
+
