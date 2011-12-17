@@ -9,33 +9,73 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulationPhys2_5", "Simula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulationPhys2_5_WPF", "SimulationPhys2_5_WPF\SimulationPhys2_5_WPF.csproj", "{B798EB9E-A08B-42D3-92FC-EB92F1F66874}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulationPhysLib", "SimulationPhysLib\SimulationPhysLib.csproj", "{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Debug|x86.ActiveCfg = Debug|x86
-		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Debug|x86.Build.0 = Debug|x86
-		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Release|x86.ActiveCfg = Release|x86
-		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Release|x86.Build.0 = Release|x86
-		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Debug|x86.ActiveCfg = Debug|x86
-		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Debug|x86.Build.0 = Debug|x86
-		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Release|x86.ActiveCfg = Release|x86
-		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Release|x86.Build.0 = Release|x86
+		{D2592A45-5A56-497A-83FC-08C477442B67}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D2592A45-5A56-497A-83FC-08C477442B67}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D2592A45-5A56-497A-83FC-08C477442B67}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{D2592A45-5A56-497A-83FC-08C477442B67}.Debug|x86.ActiveCfg = Debug|x86
 		{D2592A45-5A56-497A-83FC-08C477442B67}.Debug|x86.Build.0 = Debug|x86
+		{D2592A45-5A56-497A-83FC-08C477442B67}.Release|Any CPU.ActiveCfg = Release|x86
+		{D2592A45-5A56-497A-83FC-08C477442B67}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D2592A45-5A56-497A-83FC-08C477442B67}.Release|Mixed Platforms.Build.0 = Release|x86
 		{D2592A45-5A56-497A-83FC-08C477442B67}.Release|x86.ActiveCfg = Release|x86
 		{D2592A45-5A56-497A-83FC-08C477442B67}.Release|x86.Build.0 = Release|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Debug|x86.ActiveCfg = Debug|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Debug|x86.Build.0 = Debug|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Release|Any CPU.ActiveCfg = Release|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Release|Mixed Platforms.Build.0 = Release|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Release|x86.ActiveCfg = Release|x86
+		{333C418E-3FC1-435D-BD8A-1960A8EF7DD2}.Release|x86.Build.0 = Release|x86
+		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Debug|x86.ActiveCfg = Debug|x86
 		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Debug|x86.Build.0 = Debug|x86
+		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Release|Any CPU.ActiveCfg = Release|x86
+		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Release|Mixed Platforms.Build.0 = Release|x86
 		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Release|x86.ActiveCfg = Release|x86
 		{E312713D-BA84-49FE-B139-A34CEBEB3EC5}.Release|x86.Build.0 = Release|x86
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = SimulationPhys2_5\SimulationPhys2_5.csproj
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Debug|x86.ActiveCfg = Debug|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Debug|x86.Build.0 = Debug|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Release|Any CPU.ActiveCfg = Release|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Release|Mixed Platforms.Build.0 = Release|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Release|x86.ActiveCfg = Release|x86
+		{B798EB9E-A08B-42D3-92FC-EB92F1F66874}.Release|x86.Build.0 = Release|x86
+		{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SimulationPhys2_5\SimulationPhys2_5.csproj
 	EndGlobalSection
 EndGlobal

@@ -2,41 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SimulationPhysLib;
 
 namespace SimulationPhys1_2
 {
-    struct Point
-    {
-        public double X { get; private set; }
-        public double Y { get; private set; }
-
-        public Point(double x, double y)
-            : this()
-        {
-            X = x;
-            Y = y;
-        }
-    }
-
     class Program
     {
-
         static readonly int tryCount = 10;
         static readonly int points = 100;
         static readonly IList<int> seeds = new System.Collections.ObjectModel.ReadOnlyCollection<int>(
             new List<int>() { 619, 353, 431, 811, 103, 823, 631, 769, 827, 271 });
-
-        static double RandomDouble(Random rand, int min, int max)
-        {
-            return min + (rand.NextDouble() * (max - min));
-        }
 
         static IEnumerable<Point> GetRandomPointEnumerator(int seed, int min, int max)
         {
             var rand = new Random(seed);
 
             while (true)
-                yield return new Point(RandomDouble(rand, -1, 1), RandomDouble(rand, -1, 1));
+                yield return new Point(rand.NextDouble(min, max), rand.NextDouble(min, max));
         }
 
         static bool IsGreater(double x, double y)
