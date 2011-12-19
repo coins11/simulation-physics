@@ -1,0 +1,75 @@
+\documentclass{jsarticle}
+
+\usepackage{color}
+\usepackage[dvips]{graphicx}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\lstdefinestyle{program}{
+  basicstyle=\small\tt,
+  keywordstyle=,
+  identifierstyle=,
+  commentstyle=,
+  stringstyle=,
+  emphstyle=,
+  backgroundcolor=\color[gray]{0.8},
+  language=Haskell,
+  frame=trbl,
+  rulecolor=\color{white},
+  numbers=left,
+  numberstyle=,
+  basewidth={0.54em, 0.45em},
+  lineskip=-0.2zw
+}
+
+\title{シミュレーション物理 レポート}
+\author{情報科学類 201111365 坂口和彦}
+\date{2011-12-20}
+
+\begin{document}
+
+\maketitle
+
+\section{練習問題(6)}
+
+この問題では、リスト\ref{list:prog6}のHaskellプログラムを用いた。
+
+\begin{lstlisting}[style=program, label=list:prog6, caption=練習問題(6)のプログラム]
+import Control.Applicative
+import Control.Monad
+import Control.Arrow
+import System.Random
+
+rand = (/ 1000000) . fromIntegral <$> getStdRandom (randomR (0, 4000000 :: Int))
+
+main = do
+    ps <- replicateM 200 (liftM2 (,) rand rand)
+    mapM_ (putStrLn . unwords . map show) $
+        map (\n -> map (\m -> length $ filter ((n, m) ==)
+            (map (round *** round) ps)) [0..4]) [0..4]
+\end{lstlisting}
+
+\subsection{結果}
+
+図\ref{fig:output}に実行結果の行列の一例を示す。
+
+\begin{figure}[htbp]
+  \[
+    \begin{matrix}
+      1  & 4  & 8  & 11 & 5  \\
+      2  & 9  & 9  & 9  & 9  \\
+      3  & 13 & 13 & 15 & 8  \\
+      9  & 10 & 13 & 19 & 6  \\
+      2  & 5  & 7  & 4  & 6  \\
+    \end{matrix}
+  \]
+  \caption{実行結果}
+  \label{fig:output}
+\end{figure}
+
+\subsection{考察}
+
+端の格子点に属する領域はそうでない領域と比べて狭いが、実際に端の格子点に属する点の数が他と比べて少ないことが分かる。
+
+\end{document}

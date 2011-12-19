@@ -4,5 +4,5 @@ open build/LaTeX
 
 DefineCommandVars()
 
-.SUBDIRS: . 2011-12-02 2011-12-09
+.SUBDIRS: . 2011-12-02 2011-12-09 2011-12-16
 
