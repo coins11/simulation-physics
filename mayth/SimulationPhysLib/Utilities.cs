@@ -20,7 +20,7 @@ namespace SimulationPhysLib
         /// An enumerator of <see cref="Point"/> structure.
         /// These <see cref="Point"/> structures have double values greater than or equal to <paramref name="min"/> and less than or equal to <paramref name="max"/>. If <paramref name="min"/> equals <paramref name="max"/>, <paramref name="min"/> is returned.
         /// </returns>
-        public static IEnumerable<Point> GetRandomPointEnumerator(int seed, int min, int max)
+        public static IEnumerable<Point> GetRandomPointEnumerator(int seed, double min, double max)
         {
             var rand = new Random(seed);
 
