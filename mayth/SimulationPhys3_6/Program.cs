@@ -14,11 +14,11 @@ namespace SimulationPhys3_6
             foreach (var x in Enumerable.Range(0, 5))
                 matrix[x] = Enumerable.Repeat(0, 5).ToArray();
 
-            // calc by round
+            // by round values of Point
             foreach (var p in Utilities.GetRandomPointEnumerator(563, 0, 4).Take(200))
                 matrix[(int)Math.Round(p.X)][(int)Math.Round(p.Y)]++;
 
-            // calc by distance
+            // by distance between grid points and points
             //foreach (var p in Utilities.GetRandomPointEnumerator(563, 0, 4).Take(200))
             //{
             //    double min = Math.Pow(p.X, 2) + Math.Pow(p.Y, 2);
