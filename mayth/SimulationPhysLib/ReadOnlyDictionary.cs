@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Diagnostics.Contracts;
 
 namespace SimulationPhysLib
 {
@@ -20,6 +21,7 @@ namespace SimulationPhysLib
         /// <param name="dictionary"></param>
         public ReadOnlyDictionary(IDictionary<TKey, TValue> dictionary)
         {
+            Contract.Requires<ArgumentNullException>(dictionary != null);
             _dictionary = dictionary;
         }
 
@@ -68,6 +70,7 @@ namespace SimulationPhysLib
         /// <returns>true if this dictionary contains the specified key; otherwise, false.</returns>
         public bool TryGetValue(TKey key, out TValue value)
         {
+            Contract.Ensures(Contract.Result<bool>() == this.ContainsKey(key));
             return _dictionary.TryGetValue(key, out value);
         }
 
