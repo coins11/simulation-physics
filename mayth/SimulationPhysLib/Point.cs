@@ -54,5 +54,14 @@ namespace SimulationPhysLib
             this.x = x;
             this.y = y;
         }
+
+        /// <summary>
+        /// Returns a string that represents the current object.
+        /// </summary>
+        /// <returns>A string that represents the current object.</returns>
+        public override string ToString()
+        {
+            return string.Format("X={0},Y={1}", this.X, this.Y);
+        }
     }
 }
