@@ -25,7 +25,7 @@ namespace SimulationPhys4_7
                 });
             var after = points.Map(p => new
                 {
-                    Point = new Point(p.Point.X + p.Velocity.X * timeStep, p.Point.Y + p.Velocity.Y * timeStep),
+                    Point = p.Point + new Point(p.Velocity.X * timeStep, p.Velocity.Y * timeStep),
                     Velocity = p.Velocity
                 });
 
