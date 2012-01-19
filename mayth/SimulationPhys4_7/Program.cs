@@ -23,7 +23,7 @@ namespace SimulationPhys4_7
                     Point = p + MeshOrigin,
                     Velocity = new Point(HubbleConstant * p.X, HubbleConstant * p.Y)
                 });
-            var after = points.Map(p => new
+            var after = points.Select(p => new
                 {
                     Point = p.Point + new Point(p.Velocity.X * timeStep, p.Velocity.Y * timeStep),
                     Velocity = p.Velocity
