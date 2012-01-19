@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>0cc0660b-8999-44c8-b308-2c9ecef79b51</ProjectGuid>
+    <ProjectGuid>{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SimulationPhys5_10</RootNamespace>
@@ -45,6 +45,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimulationPhysLib\SimulationPhysLib.csproj">
+      <Project>{FB840167-4B58-48C6-B7B8-B1EBA1B26B15}</Project>
+      <Name>SimulationPhysLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -12,5 +12,14 @@ namespace SimulationPhysLib
             foreach (var element in source)
                 yield return func(element);
         }
+
+        public static IEnumerable<T> RepeatApply<T>(this IEnumerable<T> source, int repeatCount, Func<T, T> func)
+        {
+            IEnumerable<T> tmp = source;
+            foreach (int i in Enumerable.Range(0, repeatCount))
+                tmp = tmp.Select(x => func(x));
+
+            return tmp;
+        }
     }
 }

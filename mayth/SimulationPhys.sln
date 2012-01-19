@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulationPhys4_8", "Simula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulationPhys4_9", "SimulationPhys4_9\SimulationPhys4_9.csproj", "{59FDF809-84BD-4F15-99BC-D2A1E968853B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulationPhys5_10", "SimulationPhys5_10\SimulationPhys5_10.csproj", "{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,16 @@ Global
 		{59FDF809-84BD-4F15-99BC-D2A1E968853B}.Release|Mixed Platforms.Build.0 = Release|x86
 		{59FDF809-84BD-4F15-99BC-D2A1E968853B}.Release|x86.ActiveCfg = Release|x86
 		{59FDF809-84BD-4F15-99BC-D2A1E968853B}.Release|x86.Build.0 = Release|x86
+		{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}.Debug|x86.ActiveCfg = Debug|x86
+		{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}.Debug|x86.Build.0 = Debug|x86
+		{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}.Release|Any CPU.ActiveCfg = Release|x86
+		{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}.Release|Mixed Platforms.Build.0 = Release|x86
+		{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}.Release|x86.ActiveCfg = Release|x86
+		{14BF9A40-B095-4ED4-B131-1B5C5B847F2F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
